@@ -1,0 +1,30 @@
+/*
+2. CSS 요구사항
+
+전체 폰트, 표 가운데 정렬 등은 e-task.css와 비슷하게 설정.
+선택된 할인 등급 행은 배경색을 노란색 계열로 변경.
+이전에 선택된 행이 있다면 원래 색으로 되돌리고, 새로 선택된 행만 강조되도록 한다.
+*/
+
+body {
+    font-family: 'Jua';
+}
+
+table {
+    width: 30%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+table, tr, th, td {
+    border: 1px solid black;
+}
+thead {
+    background-color: #fff9c4;
+}
+
+fieldset {
+    text-align: center;
+    width: 30%;
+    margin: 0 auto;
+}

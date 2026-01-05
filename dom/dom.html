@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>할인표</title>
+    <link rel="stylesheet" href="dom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jua&display=swap"
+        rel="stylesheet"
+    />
+</head>
+<body>
+    <!--
+    1. HTML 요구사항
+
+    나이별 할인 표를 table로 만든다.
+    예시는 아래와 같이 구성한다.
+
+    열: 구분, 나이 범위, 할인율
+    행 예시:
+
+    어린이 / 0~12세 / 50%
+    청소년 / 13~18세 / 30%
+    성인 / 19~64세 / 10%
+    노인 / 65세 이상 / 40%
+
+    표 아래(또는 위)에 fieldset을 만들고 다음 요소를 둔다.
+
+    input 한 개: 나이 입력 (id="ageInput")
+    button 한 개: “조회” 버튼 (onclick="checkAge()" 처럼 함수 연결)
+    -->
+    <table>
+        <caption>할인표</caption>
+        <thead>
+            <tr>
+                <th>구분</th>
+                <th>나이 범위</th>
+                <th>할인율</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>어린이</td>
+                <td>0~12세</td>
+                <td>50%</td>
+            </tr>
+            <tr>
+                <td>청소년</td>
+                <td>13~18세</td>
+                <td>30%</td>
+            </tr>
+            <tr>
+                <td>성인</td>
+                <td>19~64세</td>
+                <td>10%</td>
+            </tr>
+            <tr>
+                <td>노인</td>
+                <td>65세 이상</td>
+                <td>40%</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <fieldset>
+        <legend>나이</legend>
+        <input type="text" id="ageInput">
+        <input type="button" value="조회" onclick="checkAge()">
+    </fieldset>
+</body>
+<script src="dom.js"></script>
+</html>
