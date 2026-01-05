@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나이별 할인 표</title>
+    <link rel="stylesheet" href="f-task.css">
+</head>
+<body>
+    <table border="1">
+            <caption>
+                나이별 할인 표                    
+            </caption>
+            <thead>
+                <tr>
+                    <th>구분</th>
+                    <th>나이 범위</th>
+                    <th>할인율</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>어린이</td>
+                    <td>0~12세</td>
+                    <td>50%</td>
+                </tr>
+                <tr>
+                    <td>청소년</td>
+                    <td>13~18세</td>
+                    <td>30%</td>
+                </tr>
+                <tr>
+                    <td>성인</td>
+                    <td>19~64세</td>
+                    <td>10%</td>
+                </tr>
+                <tr>
+                    <td>노인</td>
+                    <td>65세 이상</td>
+                    <td>40%</td>
+                </tr>
+            </tbody>
+        </table>
+        <fieldset>
+            <legend>나이 입력</legend>
+            <input type="text" id="input" />
+            <input type="button" value="확인" onclick="send()">
+        </fieldset>
+</body>
+<script src="f-task.js"></script>
+</html>
